@@ -1,0 +1,20 @@
+{
+  "name": "inugami-svg-assets",
+  "version": "0.0.1",
+  "license": "GPL-3.0-only",
+  "description": "Inugami project icon library",
+  "keywords": ["inugami", "icons", "angular", "svg"],
+  "homepage": "https://inugami.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/inugamiio/inugami-icons.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/core": "^21.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

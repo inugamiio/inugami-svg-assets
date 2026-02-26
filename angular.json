@@ -1,0 +1,37 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "packageManager": "npm",
+    "analytics": false
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "inugami-svg-assets": {
+      "projectType": "library",
+      "root": "projects/inugami-svg-assets",
+      "sourceRoot": "projects/inugami-svg-assets/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/inugami-svg-assets/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/inugami-svg-assets/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/inugami-svg-assets/tsconfig.spec.json"
+          }
+        }
+      }
+    }
+  }
+}
