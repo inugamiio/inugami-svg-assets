@@ -7,7 +7,7 @@ const FILES = [
         iconSetName: 'INUGAMI_SVG_ASSETS_DEFAULT',
         targetFolder: 'projects/inugami-svg-assets/src/lib',
         targetFile: 'inugami-svg-assets.default.ts',
-    },
+    }
 ];
 
 const INKSCAPE_ATTRIBUTES = [

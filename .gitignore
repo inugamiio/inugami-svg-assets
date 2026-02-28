@@ -55,3 +55,4 @@ pom.xml.versionsBackup
 inugami-icons.default.ts
 *.iml
 /projects/inugami-svg-assets/src/lib/inugami-svg-assets.default.ts
+build.sh
