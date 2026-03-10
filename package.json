@@ -1,6 +1,6 @@
 {
   "name": "inugami-svg-assets",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "license": "GPL-3.0-only",
   "description": "Inugami project icon library",
   "keywords": ["inugami", "icons", "angular", "svg"],
