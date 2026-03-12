@@ -11,7 +11,6 @@ const FILES = [
 ];
 
 const INKSCAPE_ATTRIBUTES = [
-    'id',
     'inkscape:groupmode',
     'inkscape:insensitive',
     'inkscape:label',
@@ -22,7 +21,6 @@ const INKSCAPE_ATTRIBUTES = [
 ];
 
 const INKSCAPE_ATTRIBUTES_CHILDREN = [
-    'id',
     'inkscape:groupmode',
     'inkscape:insensitive',
     'inkscape:label',
@@ -292,7 +290,7 @@ function convertToCamelCase(id) {
 
 function suppressInkscapeAttributes(node, level) {
     if (node) {
-        for (attr of (level <= 1 ? INKSCAPE_ATTRIBUTES : INKSCAPE_ATTRIBUTES_CHILDREN)) {
+        for (attr of (level <= 3 ? INKSCAPE_ATTRIBUTES : INKSCAPE_ATTRIBUTES_CHILDREN)) {
             node.removeAttribute(attr);
 
             if (node.children) {
